@@ -1,0 +1,131 @@
+Realizado no VisuAlg 2.5
+
+var
+   pessoa, pesado, passageiro, pedal, capacete, trilho, andaPista, tipotran: inteiro
+   alto, veic_leve, carroceria, cobrador: inteiro
+   pular, viajaDentro, devagar, piloto, asas, vertical: inteiro
+   coberto_agua, vela, motor, ealto, descoberto: inteiro
+
+inicio
+
+   escreval("Selecione um dos seguintes transportes:")
+   Escreval("trator, moto, bicicleta, trem, carro, caminhão, ônibus, paraquedas, balão, avião, helicóptero, submarino, barco, navio e lancha")
+   Escreval
+
+   Escreval("Digite o tipo de veículo: ")
+   escreval(" [1] Para transporte terrestre")
+   escreval(" [2] para transporte aéreo ")
+   escreval(" [3] para transporte aquático")
+   leia(tipot)
+   escreval("Responda com [1] para sim ou [2] para qual transporte você escolheu!")
+   escolha tipotran
+
+   caso 1
+      escreval("cabe apenas uma pessoa?")
+      leia(umapessoa)
+      escolha umapessoa
+      caso 1
+         escreval("é pesado?")
+         leia(pesado)
+         Escreval("tem pedal?")
+         leia(pedal)
+         se (umapessoa=1) e (pesado=1) entao
+            escreval("O trator foi escolhido")
+         fimse
+
+         se (umapessoa=1) e (pedal=1) entao
+            escreval("A bicicleta foi escolhida")
+         fimse
+      fimescolha
+      escreval("usa capacete?")
+      leia(capacete)
+      escolha capacete
+      caso 1
+         escreval("A moto foi escolhida")
+      fimescolha
+      Escreval("pode ter passageiro?")
+      leia(passageiro)
+      escolha passageiro
+      caso 1
+         escreval("usa trilho?")
+         leia(trilho)
+         escolha trilho
+         caso 1
+            escreval("O trel foi escolhido")
+         fimescolha
+         escreval("anda na pista?")
+         leia(andaPista)
+         escreval("é veículo leve?")
+         leia(veic_leve)
+         escolha veic_leve
+         caso 1
+            escreval("Você escolheu o carro")
+         fimescolha
+         Escreval("O veículo é alto?")
+         leia(alto)
+         escolha alto
+         caso 1
+            Escreval("usa carroceria?")
+            leia(carroceria)
+            escreval("Pode ter cobrador?")
+            leia(cobrador)
+            se (carroceria=1) entao
+               escreval("O caminhão foi escolhido")
+            senão
+               escreval("O ônibus foi escolhido")
+            fimse
+         fimescolha
+      Fimescolha
+
+   caso 2
+      escreval("Precisa pular?")
+      leia(pular)
+      escolha pular
+      caso 1
+         escreval("A asa delta foi escolhida")
+      fimescolha
+      escreval("Você pode viajar dentro?")
+      leia(viajaDentro)
+      escolha viajaDentro
+      caso 1
+         escreval("É devagar?")
+         leia(devagar)
+         escolha devagar
+         caso 1
+            escreval("O balão foi escolhido")
+         caso 2
+            escreval("possui asas fixas?")
+            leia(asas)
+            se (asas=1) então
+               escreval("O avião foi escolhido")
+            senão
+               escreval("O helicóptero foi escolhido")
+            fimse
+         fimescolha
+      fimescolha
+      
+   caso 3
+      escreval("É coberto d'água?")
+      leia(coberto_agua)
+      escolha coberto_agua
+      caso 1
+         escreval("O submarino foi escolhido")
+      fimescolha
+      escreval("possui vela?")
+      leia(vela)
+      escolha vela
+      caso 1
+         Escreval("O barco foi escolhido")
+      caso 2
+         escreval("é alto?")
+         leia(ealto)
+         se (ealto=1) entao
+            escreval(" Você escolheu o navio!")
+         senão
+            escreval("Você escolheu a lancha!")
+         fimse
+      fimescolha
+
+   fimescolha
+
+fimalgoritmo
